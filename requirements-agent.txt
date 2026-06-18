@@ -1,0 +1,26 @@
+# 1688 Agent A2A - Python 依赖
+
+# Web框架
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.0.0
+
+# HTTP客户端
+aiohttp>=3.9.0
+
+# YAML配置
+pyyaml>=6.0.1
+
+# A2A协议SDK
+a2a-sdk>=0.1.0
+
+# 可选：LangGraph集成（用于复杂工作流）
+# langgraph>=0.0.20
+
+# 可选：AutoGen集成
+# autogen-agentchat>=0.2.0
+
+# 测试
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+httpx>=0.25.0
