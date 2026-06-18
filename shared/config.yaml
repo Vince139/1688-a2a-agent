@@ -1,0 +1,111 @@
+# 1688 智能询盘多智能体系统配置
+
+# ==================== A2A Agent 网络配置 ====================
+a2a:
+  # 各 Agent 服务地址（Docker Compose 内部网络）
+  agents:
+    entry: "http://entry-agent:8001"
+    classifier: "http://classifier-agent:8002"
+    price_expert: "http://price-expert:8003"
+    sample_expert: "http://sample-expert:8004"
+    customize_expert: "http://customize-expert:8005"
+    aggregator: "http://aggregator-agent:8006"
+    exit: "http://exit-agent:8007"
+
+  # 注册中心（可选用 Redis 或直接用文件）
+  registry:
+    type: "file"  # "file" | "redis"
+    path: "/app/shared/registry.json"
+
+# ==================== 1688 开放平台 ====================
+aliyun:
+  app_key: "your_app_key"
+  app_secret: "your_app_secret"
+  refresh_token: "your_refresh_token"
+  notify_url: "http://your-domain.com/1688/webhook"
+
+# ==================== 知识库 ====================
+knowledge:
+  products_path: "/app/knowledge_base/products.yaml"
+  templates_path: "/app/knowledge_base/templates.py"
+
+# ==================== 回复策略 ====================
+reply:
+  # 自动发送阈值（置信度 >= 此值自动发）
+  auto_threshold: 85
+
+  # 高风险关键词（必须人工审核）
+  high_risk_keywords:
+    - "仿牌"
+    - "高仿"
+    - "A货"
+    - "假货"
+    - "账期"
+    - "月结"
+    - "赊账"
+    - "先货后款"
+    - "回扣"
+
+  # 自动回复类型
+  auto_reply_types:
+    - "price"
+    - "sample"
+    - "logistics"
+    - "quality"
+
+  # 需人工处理类型
+  require_human_types:
+    - "customization"
+
+# ==================== 通知配置 ====================
+notification:
+  # 企业微信通知
+  wecom_webhook: "your_wecom_webhook_url"
+
+  # 人工队列告警阈值
+  human_queue_alert: 5
+
+# ==================== AI 配置 ====================
+ai:
+  # 默认 provider
+  provider: "hermes"  # "hermes" | "openai" | "anthropic" | "gemini"
+
+  # Hermes 配置
+  hermes:
+    api_url: "http://localhost:8000"  # Hermes Gateway API 地址
+    api_key: ""                         # Hermes API Key（如果需要）
+    model: "mini-max/M2.7"             # 默认模型
+    timeout: 60                        # 超时秒数
+
+  # OpenAI 备用配置
+  openai:
+    api_key: ""
+    model: "gpt-4o-mini"
+    base_url: "https://api.openai.com/v1"
+
+  # Anthropic 备用配置
+  anthropic:
+    api_key: ""
+    model: "claude-sonnet-4"
+
+  # 生成参数
+  generation:
+    temperature: 0.7
+    max_tokens: 800
+    top_p: 0.9
+
+  # A2A 顾问场景
+  a2a_consultant:
+    enabled: true
+    scenarios:
+      - "complex_negotiation"   # 复杂谈判
+      - "complaint_handling"    # 投诉处理
+      - "follow_up"            # 跟进未回复买家
+
+# ==================== Webhook 配置 ====================
+webhook:
+  host: "0.0.0.0"
+  port: 8644
+  secret: "your-webhook-secret-here"
+  # Hermes Gateway webhook 接收地址
+  hermes_gateway_url: "http://localhost:8644"

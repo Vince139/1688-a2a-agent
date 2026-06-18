@@ -1,0 +1,163 @@
+# 1688 商品知识库 - 户外运动 & 美妆护肤
+
+outdoor_sports:
+  backpacks:
+    - name: "户外登山背包"
+      keywords: ["登山背包", "徒步背包", "户外背包", "露营背包"]
+      price_range: "¥89-399"
+      moq: "30件"
+      sample_fee: "¥50-150/件（可退）"
+      customization: "支持定制logo/颜色/面料/容量，MOQ 100件"
+      delivery_time: "7-15天"
+      certifications: ["CE", "ISO9001", "BSCI"]
+
+    - name: "运动腰包/臂包"
+      keywords: ["腰包", "臂包", "跑步腰包", "运动腰包"]
+      price_range: "¥15-59"
+      moq: "200件"
+      sample_fee: "¥10-30/件（可退）"
+      customization: "支持定制logo/颜色，MOQ 500件"
+      delivery_time: "5-10天"
+      certifications: ["CE"]
+
+  camping:
+    - name: "露营帐篷"
+      keywords: ["帐篷", "露营帐篷", "野外帐篷", " camping"]
+      price_range: "¥199-1299"
+      moq: "10件"
+      sample_fee: "¥100-400/件（可退）"
+      customization: "支持定制logo/颜色/规格（2-8人），MOQ 50件"
+      delivery_time: "10-25天"
+      certifications: ["CE", "CPAI", "UV Protection"]
+
+    - name: "露营睡袋"
+      keywords: ["睡袋", "露营睡袋", "户外睡袋"]
+      price_range: "¥79-399"
+      moq: "30件"
+      sample_fee: "¥60-150/件（可退）"
+      customization: "支持定制logo/颜色/温标，MOQ 100件"
+      delivery_time: "7-15天"
+      certifications: ["EN 13537"]
+
+    - name: "折叠椅/折叠桌"
+      keywords: ["折叠椅", "露营椅", "折叠桌", "野餐桌椅"]
+      price_range: "¥69-299"
+      moq: "20件"
+      sample_fee: "¥50-120/件（可退）"
+      customization: "支持定制logo/颜色/材质，MOQ 100件"
+      delivery_time: "7-15天"
+      certifications: ["CE"]
+
+  sports_accessories:
+    - name: "瑜伽垫/健身垫"
+      keywords: ["瑜伽垫", "健身垫", "瑜伽", "冥想垫"]
+      price_range: "¥29-149"
+      moq: "50件"
+      sample_fee: "¥20-60/件（可退）"
+      customization: "支持定制logo/颜色/厚度/图案，MOQ 200件"
+      delivery_time: "5-12天"
+      certifications: ["CE", "SGS", "OEKO-TEX"]
+
+    - name: "运动水壶"
+      keywords: ["水壶", "水杯", "运动水杯", "保温杯", "水袋"]
+      price_range: "¥19-99"
+      moq: "100件"
+      sample_fee: "¥15-50/件（可退）"
+      customization: "支持定制logo/颜色/容量（300ml-2L），MOQ 200件"
+      delivery_time: "5-10天"
+      certifications: ["FDA", "LFGB", "BPA Free"]
+
+    - name: "瑜伽服/运动服"
+      keywords: ["瑜伽服", "运动服", "健身服", "运动套装"]
+      price_range: "¥39-199/套"
+      moq: "100套"
+      sample_fee: "¥30-80/套（可退）"
+      customization: "支持定制logo/颜色/面料/尺码，MOQ 300套"
+      delivery_time: "10-20天"
+      certifications: ["OEKO-TEX", "BSCI"]
+
+beauty_skincare:
+  skincare:
+    - name: "护肤套装"
+      keywords: ["护肤套装", "水乳霜", "护肤品"]
+      price_range: "¥59-399/套"
+      moq: "100套"
+      sample_fee: "¥30-100/套（可退）"
+      customization: "支持定制包装/品牌/成分，MOQ 500套"
+      delivery_time: "15-30天"
+      certifications: ["GMPC", "ISO22716", "FDA"]
+
+    - name: "面膜"
+      keywords: ["面膜", "贴片面膜", "涂抹面膜", "睡眠面膜"]
+      price_range: "¥3-25/片"
+      moq: "1000片"
+      sample_fee: "¥2-10/片（可退）"
+      customization: "支持定制包装/成分/功效，MOQ 5000片"
+      delivery_time: "15-30天"
+      certifications: ["GMPC", "FDA", "CFDA"]
+
+    - name: "防晒产品"
+      keywords: ["防晒", "防晒霜", "防晒喷雾", "防晒乳"]
+      price_range: "¥19-129"
+      moq: "300瓶"
+      sample_fee: "¥10-40/瓶（可退）"
+      customization: "支持定制logo/SPF值/包装，MOQ 1000瓶"
+      delivery_time: "15-25天"
+      certifications: ["GMPC", "SPF检测报告"]
+
+  makeup:
+    - name: "口红/唇膏"
+      keywords: ["口红", "唇膏", "唇釉", "唇彩"]
+      price_range: "¥8-99/支"
+      moq: "500支"
+      sample_fee: "¥5-30/支（可退）"
+      customization: "支持定制logo/颜色/质地/香型，MOQ 2000支"
+      delivery_time: "20-35天"
+      certifications: ["CE", "FDA", "GMPC"]
+
+    - name: "气垫/粉底"
+      keywords: ["气垫", "粉底", "粉饼", "底妆"]
+      price_range: "¥19-129"
+      moq: "300个"
+      sample_fee: "¥10-50/个（可退）"
+      customization: "支持定制logo/色号/包装，MOQ 1000个"
+      delivery_time: "20-30天"
+      certifications: ["CE", "FDA", "GMPC"]
+
+    - name: "眼影"
+      keywords: ["眼影", "眼影盘", "单色眼影"]
+      price_range: "¥9.9-79"
+      moq: "500个"
+      sample_fee: "¥5-25/个（可退）"
+      customization: "支持定制logo/颜色/包装，MOQ 2000个"
+      delivery_time: "20-30天"
+      certifications: ["CE", "FDA", "GMPC"]
+
+  fragrance:
+    - name: "香水/淡香水"
+      keywords: ["香水", "淡香水", "香氛", "parfum"]
+      price_range: "¥29-199"
+      moq: "200瓶"
+      sample_fee: "¥15-60/瓶（可退）"
+      customization: "支持定制logo/香型/瓶身，MOQ 500瓶"
+      delivery_time: "20-35天"
+      certifications: ["IFRA", "GMPC", "MSDS"]
+
+  tools:
+    - name: "化妆刷套装"
+      keywords: ["化妆刷", "刷子套装", "美妆刷"]
+      price_range: "¥15-199/套"
+      moq: "200套"
+      sample_fee: "¥10-60/套（可退）"
+      customization: "支持定制logo/颜色/材质，MOQ 500套"
+      delivery_time: "10-20天"
+      certifications: ["CE"]
+
+    - name: "美容仪"
+      keywords: ["美容仪", "按摩仪", "导入仪", "洁面仪"]
+      price_range: "¥99-999"
+      moq: "50台"
+      sample_fee: "¥50-200/台（可退）"
+      customization: "支持定制logo/颜色/功能，MOQ 200台"
+      delivery_time: "15-30天"
+      certifications: ["CE", "FCC", "RoHS"]
